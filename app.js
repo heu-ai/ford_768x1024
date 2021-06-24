@@ -1,5 +1,5 @@
 // Imported Images in a Array by giving complete url
-var imges = ['img/1.png', 'img/2.png'];
+var imges = ['img/1.png', 'img/2.png', 'img/3.png', 'img/4.png', 'img/5.png', 'img/6.png', 'img/7.png', 'img/8.png'];
 
 var landing_page = "https://clientefavoritofordsp.com/?utm_source=NBids&utm_medium=bannerinterativo&utm_campaign=ABRADIF_Junho"
 
@@ -67,6 +67,35 @@ window.onload = function(){
 }
 
 function pg2func(op){
+
+    var blue = document.getElementById("blue");
+    blue.style = "position: absolute;top: 293px;left: 241px;height: 66px;background: transparent;width: 70px;border-radius: 2%;border: 1px solid transparent;";
+    blue.onclick= function(){APICall("page2leftkey1"); op.src = imges[1];};
+
+    var red = document.getElementById("red");
+    red.style = "position: absolute;top: 293px;left: 310px;height: 66px;background: transparent;width: 67px;border-radius: 2%;border: 1px solid transparent;";
+    red.onclick= function(){APICall("page2leftkey2"); op.src = imges[2];};
+
+    var black = document.getElementById("black");
+    black.style = "position: absolute;top: 293px;left: 375px;height: 66px;background: transparent;width: 70px;border-radius: 2%;border: 1px solid transparent;";
+    black.onclick= function(){APICall("page2leftkey3"); op.src = imges[3];};
+
+    var maroon = document.getElementById("maroon");
+    maroon.style = "position: absolute;top: 293px;left: 442px;height: 66px;background: transparent;width: 66px;border-radius: 2%;border: 1px solid transparent;";
+    maroon.onclick= function(){APICall("page2rightkey1"); op.src = imges[4];};
+
+    var darkgrey = document.getElementById("darkgrey");
+    darkgrey.style = "position: absolute;top: 293px;left: 510px;height: 66px;background: transparent;width: 65px;border-radius: 2%;border: 1px solid transparent;";
+    darkgrey.onclick= function(){APICall("page2rightkey2"); op.src = imges[5];};
+
+    var white = document.getElementById("white");
+    white.style = "position: absolute;top: 293px;left: 575px;height: 66px;background: transparent;width: 67px;border-radius: 2%;border: 1px solid transparent;";
+    white.onclick= function(){APICall("page2rightkey3"); op.src = imges[6];};
+
+    var grey = document.getElementById("grey");
+    grey.style = "position: absolute;top: 293px;left: 640px;height: 66px;background: transparent;width: 70px;border-radius: 2%;border: 1px solid transparent;";
+    grey.onclick= function(){APICall("page4"); op.src = imges[7];};
+
     var knowmore = document.getElementById("knowmore");
     knowmore.style = "position: absolute;top: 710px;left: 513px;height: 65px;background: transparent;width: 220px;border-radius: 2%;border: 1px solid transparent;";
     knowmore.onclick= function(){APICall("page3"); window.open(landing_page)};
